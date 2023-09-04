@@ -13,7 +13,7 @@ const MessagePanel: React.FC = () => {
   useEffect(() => {
     // Replace 'YOUR_API_ENDPOINT' with your actual API endpoint.
     axios
-      .get('http://100.24.66.164:4000/api/msg')
+      .get('http://100.24.66.164:1000/api/msg')
       .then((response) => {
         const filteredMessages = response.data.map((message: any) => ({
           id: message.id,
