@@ -9,7 +9,7 @@ const PostMsg = () => {
         e.preventDefault();
         const data = { content, name };
         setIsPending(true);
-        fetch('http://100.24.66.164:4000/api/msg', {
+        fetch('http://100.24.66.164:1000/api/msg', {
             method: 'POST',
             headers: { "content-type": "application/json" },
             body: JSON.stringify(data)
@@ -22,7 +22,7 @@ const PostMsg = () => {
         });
 
         // calling the api to delete the messages
-        fetch('http://100.24.66.164:4000/api/msg', {
+        fetch('http://100.24.66.164:1000/api/msg', {
             method: 'DELETE',
             headers: { "content-type": "application/json" },
             body: JSON.stringify(data)
